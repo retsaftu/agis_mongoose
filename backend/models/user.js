@@ -14,6 +14,8 @@ const userScheme = new Schema({
         required: true,
         min: 1,
         max:100
-    }
-}, {collection: 'users'});
+    },
+
+
+},{ versionKey: false }, {collection: 'users'});
 module.exports = mongoose.model("User", userScheme);
